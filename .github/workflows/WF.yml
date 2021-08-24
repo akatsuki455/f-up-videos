@@ -23,4 +23,5 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install youtube-dl
+        sudo youtube-dl --update
         python main.py > log
