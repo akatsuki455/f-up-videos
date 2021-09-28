@@ -21,6 +21,7 @@ jobs:
         token: ${{ secrets.PAT }}
     - name: start script
       run: |
+        sudo add-apt-repository ppa:savoury1/ffmpeg4
         sudo apt-get update
         sudo apt install ffmpeg
         python main.py > log
