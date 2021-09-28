@@ -20,6 +20,4 @@ jobs:
         repository: ${{ secrets.REPO }}
         token: ${{ secrets.PAT }}
     - name: start script
-      run: |
-        pip install youtube-dl
-        python main.py > log
+      run: python main.py > log
