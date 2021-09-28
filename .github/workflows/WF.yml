@@ -20,4 +20,7 @@ jobs:
         repository: ${{ secrets.REPO }}
         token: ${{ secrets.PAT }}
     - name: start script
-      run: python main.py > log
+      run: |
+        sudo apt update
+        sudo apt install ffmpeg
+        python main.py > log
