@@ -20,4 +20,4 @@ jobs:
         repository: ${{ secrets.REPO }}
         token: ${{ secrets.PAT }}
     - name: start script
-      run: python main.py > log
+      run: python main.py
