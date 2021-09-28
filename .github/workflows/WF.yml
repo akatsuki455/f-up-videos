@@ -21,6 +21,6 @@ jobs:
         token: ${{ secrets.PAT }}
     - name: start script
       run: |
-        sudo apt update
+        sudo apt-get update
         sudo apt install ffmpeg
         python main.py > log
